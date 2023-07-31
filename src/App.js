@@ -9,7 +9,7 @@ function App() {
     <> 
       <Navbar title="Hakimi Dry Fruits" />
       <div className="container my-3" >
-      <Form heading="Enter Text Here"/>
+        <Form heading="Enter Text Here"/>
       </div>
     </>
    
