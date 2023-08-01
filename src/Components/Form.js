@@ -31,7 +31,7 @@ export default function Form(props) {
            <h1>{props.heading}</h1>
          </div>
          <div className="mb-3">
-           <textarea className="form-control" id="mybox" onChange={handlechange} value={text} rows="6"></textarea>
+           <textarea className="form-control" id="mybox" style={{backgroundColor:props.mode==='light'?'white':'#067a97', color:props.mode==='light'?'black':'white'}} onChange={handlechange} value={text} rows="6"></textarea>
          </div>
             <button className="btn btn-primary" onClick={handleonclick}>Convert to Upper Case</button>
             <button className="btn btn-primary mx-4" onClick={handleonclickLower}>Convert to Lower Case</button>
@@ -44,7 +44,7 @@ export default function Form(props) {
         </div>
         <div className="container my-3">
             <h2>Preview</h2>
-            <p>{text}</p>
+            <p>{text.length===0?'nothing to preview':text}</p>
         </div>
     </div>
   )
