@@ -12,6 +12,11 @@ export default function Form(props) {
         settext(textlocal);
    
     }
+    const  handleonclickclear=()=>{
+        let textlocal='';
+        settext(textlocal);
+   
+    }
        
     const  handlechange=(event)=>{
         settext(event.target.value);
@@ -30,6 +35,7 @@ export default function Form(props) {
          </div>
             <button className="btn btn-primary" onClick={handleonclick}>Convert to Upper Case</button>
             <button className="btn btn-primary mx-4" onClick={handleonclickLower}>Convert to Lower Case</button>
+            <button className="btn btn-primary mx-4" onClick={handleonclickclear}>Clear Text</button>
         </div> 
         <div className="container my-3">
             <h2>Your Text Summary</h2>
